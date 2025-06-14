@@ -1,0 +1,10 @@
+CREATE DATABASE IF NOT EXISTS crime_db;
+USE crime_db;
+
+CREATE TABLE IF NOT EXISTS crime_reports (
+    id INT PRIMARY KEY,
+    date_reported DATETIME,
+    area VARCHAR(100),
+    crime VARCHAR(255),
+    weapon VARCHAR(255)
+);
